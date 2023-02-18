@@ -1,0 +1,43 @@
+:root {
+	--font-color: #282a36;
+	--background: #fff;
+	--accent: #8be9fd;
+	--accent-grad: linear-gradient(90deg, rgba(114, 168, 229, 1) 0%, rgba(107, 239, 239, 1) 100%);
+
+	background: var(--background);
+	font-size: 24px;
+	font-family: 'Robot', sans-serif;
+	font-weight: 400;
+	color: var(--font-color);
+}
+
+body {
+	margin: 0;
+}
+
+a {
+	color: var(--font-color);
+	text-decoration: none;
+	position: relative;
+
+	/*
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: 4px;
+      left: 0;
+      height: 4px;
+      width: 100%;
+      background: var(--accent-grad);
+    }
+    */
+
+	&:hover {
+		background: var(--accent-grad);
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		-moz-background-clip: text;
+		-moz-text-fill-color: transparent;
+	}
+}
