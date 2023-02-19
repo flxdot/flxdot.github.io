@@ -1,7 +1,7 @@
 <script>
 	import Logo from './logo.svelte';
-	import github from '$lib/images/github.svg';
-	import instagram from '$lib/images/instagram.svg';
+	import Github from '$lib/images/github.svelte';
+	import Instagram from '$lib/images/instagram.svelte';
 </script>
 
 <header>
@@ -9,11 +9,11 @@
 
 	<div id="header-links-container">
 		<div id="header-links">
-			<a href="https://github.com/flxdot" target="_blank" rel="noreferrer">
-				<img src={github} alt="GitHub" />
+			<a href="https://github.com/flxdot" target="_blank" rel="noreferrer" class="social-icon">
+				<Github />
 			</a>
-			<a href="https://instagram.com/flxdot" target="_blank" rel="noreferrer">
-				<img src={instagram} alt="Instagram" />
+			<a href="https://instagram.com/flxdot" target="_blank" rel="noreferrer" class="social-icon">
+				<Instagram />
 			</a>
 		</div>
 	</div>
@@ -43,10 +43,18 @@
 		a {
 			height: 1rem;
 		}
+	}
 
-		img {
-			height: 1rem;
-			width: 1rem;
-		}
+	.social-icon {
+		height: 1rem;
+		width: 1rem;
+	}
+
+	:global(.social-icon svg path) {
+		fill: var(--text-primary);
+	}
+
+	:global(.social-icon:hover path) {
+		fill: var(--accent);
 	}
 </style>

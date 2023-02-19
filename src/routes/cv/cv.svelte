@@ -24,7 +24,7 @@
 		left: 0;
 		height: 4px;
 		width: 100%;
-		background: var(--font-color);
+		background: var(--text-primary);
 	}
 
 	a:hover:before {

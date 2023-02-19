@@ -1,36 +1,55 @@
 :root {
-	--font-color: #282a36;
+	--text-primary: #282a36;
+	--text-helper: #8d8d8d;
 	--background: #fff;
-	--accent: #8be9fd;
-	--accent-grad: linear-gradient(90deg, rgba(114, 168, 229, 1) 0%, rgba(107, 239, 239, 1) 100%);
+	--accent: #6befef;
+	--accent-grad: linear-gradient(90deg, #72a8e5 0%, #6befef 100%);
 
 	background: var(--background);
 	font-size: 24px;
 	font-family: 'Robot', sans-serif;
 	font-weight: 400;
-	color: var(--font-color);
+	color: var(--text-primary);
+}
+
+/* roboto-regular - latin */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/roboto-v30-latin-regular.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/roboto-v30-latin-regular.eot?#iefix') format('embedded-opentype'),
+		/* IE6-IE8 */ url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'),
+		/* Super Modern Browsers */ url('../fonts/roboto-v30-latin-regular.woff') format('woff'),
+		/* Modern Browsers */ url('../fonts/roboto-v30-latin-regular.ttf') format('truetype'),
+		/* Safari, Android, iOS */ url('../fonts/roboto-v30-latin-regular.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+
+/* ubuntu-mono-regular - latin */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Ubuntu Mono';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/ubuntu-mono-v15-latin-regular.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/ubuntu-mono-v15-latin-regular.eot?#iefix') format('embedded-opentype'),
+		/* IE6-IE8 */ url('../fonts/ubuntu-mono-v15-latin-regular.woff2') format('woff2'),
+		/* Super Modern Browsers */ url('../fonts/ubuntu-mono-v15-latin-regular.woff') format('woff'),
+		/* Modern Browsers */ url('../fonts/ubuntu-mono-v15-latin-regular.ttf') format('truetype'),
+		/* Safari, Android, iOS */ url('../fonts/ubuntu-mono-v15-latin-regular.svg#UbuntuMono')
+			format('svg'); /* Legacy iOS */
 }
 
 body {
 	margin: 0;
+	font-family: 'Roboto', sans-serif;
 }
 
 a {
-	color: var(--font-color);
+	color: var(--text-primary);
 	text-decoration: none;
 	position: relative;
-
-	/*
-    &:before {
-      content: "";
-      position: absolute;
-      bottom: 4px;
-      left: 0;
-      height: 4px;
-      width: 100%;
-      background: var(--accent-grad);
-    }
-    */
 
 	&:hover {
 		background: var(--accent-grad);

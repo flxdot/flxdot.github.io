@@ -1,4 +1,10 @@
-<div class="logo">
+<script>
+	let navigateHome = () => {
+		window.location.href = '/';
+	};
+</script>
+
+<div class="logo" on:click={navigateHome}>
 	<span class="firstname">felix</span><span class="lastname"
 		>fanghanel<span class="domain">.dev()</span></span
 	>
@@ -20,18 +26,22 @@
 			box-sizing: border-box;
 			-moz-box-sizing: border-box;
 			-webkit-box-sizing: border-box;
-			border-color: var(--font-color);
+			border-color: var(--text-primary);
 			border-style: solid;
 			border: 4px 0 4px 4px;
 		}
 
 		span.lastname {
 			color: var(--background);
-			background-color: var(--font-color);
+			background-color: var(--text-primary);
 		}
 
 		span.domain {
 			color: var(--accent);
 		}
+	}
+
+	.logo:hover {
+		cursor: pointer;
 	}
 </style>
