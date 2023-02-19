@@ -12,7 +12,7 @@ export function markExternalLinks() {
 		.filter((e: HTMLAnchorElement) => e.href.startsWith('http'))
 		.forEach((e: HTMLAnchorElement) => {
 			const childImages = e.getElementsByTagName('svg');
-			if (e.getElementsByTagName('svg').length == 0) {
+			if (childImages.length == 0) {
 				e.classList.add('external');
 			}
 		});

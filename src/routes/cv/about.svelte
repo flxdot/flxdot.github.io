@@ -3,6 +3,7 @@
 
 	import { experience } from './data';
 	import Employer from './employer.svelte';
+	import PopOutDetail from './pop-out-detail.svelte';
 	const current_job = experience[0];
 </script>
 
@@ -10,7 +11,10 @@
 	<p>
 		I'm Felix. A full-stack developer for <GradHl>industrial</GradHl> applications based in Germany.
 		Currently <GradHl>{current_job.title}</GradHl> at <Employer job={current_job} />. I specialize
-		in combining <GradHl>domain knowledge</GradHl> with <GradHl>technology</GradHl>.
+		in combining <GradHl>domain knowledge</GradHl> with <PopOutDetail preview="technology"
+			>with a strong focus on containerized microservice application build in python (FastAPI),
+			PostgreSQL for cloud and on-premises deployments.</PopOutDetail
+		>.
 	</p>
 </div>
 

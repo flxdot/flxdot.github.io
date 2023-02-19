@@ -1,16 +1,12 @@
 <script lang="ts">
+	import { wrapKeyUp } from '$lib/handlers';
+
 	let navigateHome = () => {
 		window.location.href = '/';
 	};
-
-	let keyUp = (event: KeyboardEvent) => {
-		if (event.key === 'enter') {
-			navigateHome();
-		}
-	};
 </script>
 
-<div class="logo" on:click={navigateHome} on:keyup={keyUp}>
+<div class="logo" on:click={navigateHome} on:keyup={wrapKeyUp(navigateHome)}>
 	<span class="firstname">felix</span><span class="lastname"
 		>fanghanel<span class="domain">.dev()</span></span
 	>
