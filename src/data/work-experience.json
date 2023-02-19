@@ -1,0 +1,37 @@
+[
+	{
+		"title": "Application Engineer",
+		"company": "SMS group GbmH",
+		"start": 2014,
+		"end": 2019,
+		"url": "https://www.sms-group.com",
+		"description": "Lead Software Architect and Developer of HD mold (Front and Backend). Design and development of analytic algorithms to detect events based on signals. Comissioning of HD mold including sensoric hardware and server infrastructure. Various small software projects/tooling. Administrator of a self-hosted GitLab Server.",
+		"technology": ["matlab", "python", "opc da"]
+	},
+	{
+		"title": "Product Manager",
+		"company": "SMS digital GbmH",
+		"start": 2019,
+		"end": 2022,
+		"url": "https://www.sms-digital.com",
+		"description": "Product management of a data management system. Comissioning of data mangement systems at customer sites. Member of the development team to build a web application to provide a metadata repository for the data mangement system. Sales support and customer consulting for data mangement systems.",
+		"technology": ["python", "FastAPI", "SQLAlchemy"]
+	},
+	{
+		"title": "Lead Data Engineer",
+		"company": "SMS digital GmbH",
+		"start": 2021,
+		"end": 2022,
+		"url": "https://www.sms-digital.com",
+		"description": "Responsible to define and drive company standards in data engineering domain. Advice development teams on data architecture.",
+		"technology": ["python"]
+	},
+	{
+		"title": "Lead Software Engineer",
+		"company": "Nitrex",
+		"start": 2022,
+		"url": "https://www.nitrex.com",
+		"description": "Responsible to define and drive company standards in data engineering domain. Advice development teams on data architecture.",
+		"technology": ["python", "FastAPI", "AWS"]
+	}
+]

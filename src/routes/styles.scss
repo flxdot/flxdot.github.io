@@ -5,10 +5,13 @@
 	--accent: #6befef;
 	--accent-grad: linear-gradient(90deg, #72a8e5 0%, #6befef 100%);
 
+	--font-weight-normal: 400;
+	--font-weight-bold: 600;
+
 	background: var(--background);
 	font-size: 24px;
 	font-family: 'Robot', sans-serif;
-	font-weight: 400;
+	font-weight: var(--font-weight-normal);
 	color: var(--text-primary);
 }
 
