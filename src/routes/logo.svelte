@@ -1,10 +1,16 @@
-<script>
+<script lang="ts">
 	let navigateHome = () => {
 		window.location.href = '/';
 	};
+
+	let keyUp = (event: KeyboardEvent) => {
+		if (event.key === 'enter') {
+			navigateHome();
+		}
+	};
 </script>
 
-<div class="logo" on:click={navigateHome}>
+<div class="logo" on:click={navigateHome} on:keyup={keyUp}>
 	<span class="firstname">felix</span><span class="lastname"
 		>fanghanel<span class="domain">.dev()</span></span
 	>

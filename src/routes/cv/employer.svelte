@@ -5,7 +5,7 @@
 </script>
 
 {#if job.url}
-	<a href={job.url} target="_blank" ref="noreferrer">{job.company}</a>
+	<a href={job.url} target="_blank" rel="noreferrer">{job.company}</a>
 {:else}
 	{job.company}
 {/if}
