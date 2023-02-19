@@ -9,10 +9,11 @@
 
 <div id="cv-about">
 	<p>
-		I'm Felix. A full-stack developer for <TextGradient>industrial</TextGradient> applications based in Germany.
-		Currently <TextGradient>{current_job.title}</TextGradient> at <Employer job={current_job} />. I specialize
-		in combining <TextGradient>domain knowledge</TextGradient> with <TextFacade
-				preview="technology"
+		I'm Felix. A full-stack developer for <TextGradient>industrial</TextGradient> applications based
+		in Germany. Currently <TextGradient>{current_job.title}</TextGradient> at <Employer
+			job={current_job}
+		/>. I specialize in combining <TextGradient>domain knowledge</TextGradient> with <TextFacade
+			preview="technology"
 			detail="containerized microservice application build in python (FastAPI),
 			PostgreSQL for cloud and on-premises deployments"
 		/>.
