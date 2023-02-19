@@ -1,20 +1,21 @@
 <script>
-	import GradHl from './grad-hl.svelte';
+	import Employer from './employer.svelte';
+	import TextFacade from '$components/TextFacade.svelte';
+	import TextGradient from '$components/TextGradient.svelte';
 
 	import { experience } from './data';
-	import Employer from './employer.svelte';
-	import PopOutDetail from './pop-out-detail.svelte';
 	const current_job = experience[0];
 </script>
 
 <div id="cv-about">
 	<p>
-		I'm Felix. A full-stack developer for <GradHl>industrial</GradHl> applications based in Germany.
-		Currently <GradHl>{current_job.title}</GradHl> at <Employer job={current_job} />. I specialize
-		in combining <GradHl>domain knowledge</GradHl> with <PopOutDetail preview="technology"
-			>with a strong focus on containerized microservice application build in python (FastAPI),
-			PostgreSQL for cloud and on-premises deployments.</PopOutDetail
-		>.
+		I'm Felix. A full-stack developer for <TextGradient>industrial</TextGradient> applications based in Germany.
+		Currently <TextGradient>{current_job.title}</TextGradient> at <Employer job={current_job} />. I specialize
+		in combining <TextGradient>domain knowledge</TextGradient> with <TextFacade
+				preview="technology"
+			detail="containerized microservice application build in python (FastAPI),
+			PostgreSQL for cloud and on-premises deployments"
+		/>.
 	</p>
 </div>
 
