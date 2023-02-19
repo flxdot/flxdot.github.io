@@ -34,3 +34,16 @@ a {
 		-moz-text-fill-color: transparent;
 	}
 }
+
+// a[href^="http"]:not(:has(svg, img))::after {
+a.external::after {
+	content: '';
+	width: 0.6em;
+	height: 0.6em;
+	margin-left: 0.25em;
+	background-image: url('icons/ext-link.svg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: inline-block;
+}

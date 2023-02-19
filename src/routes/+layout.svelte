@@ -1,9 +1,15 @@
-<script>
+<script lang="ts">
 	import './styles.scss';
 	import '@fontsource/roboto';
 	import '@fontsource/ubuntu-mono';
 	import Header from './header.svelte';
 	import Footer from './footer.svelte';
+	import { afterUpdate } from 'svelte';
+	import { markExternalLinks } from '$lib/fixes';
+
+	afterUpdate(() => {
+		markExternalLinks();
+	});
 </script>
 
 <div id="app-container">
