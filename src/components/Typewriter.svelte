@@ -1,13 +1,21 @@
+<script context="module" lang="ts">
+	export interface TypeWriterController {
+		start: () => void;
+		stop: () => void;
+	}
+</script>
+
 <script lang="ts">
 	export let text: string;
 
 	/* typing speed in words per minute */
-	let speed = 120;
+	export const wpm = 120;
 
-	export const controller = {
+	export const controller: TypeWriterController = {
 		start() {
+			clearBuffer();
 			/* calculate the intervall to wait between key strokes */
-			typer = setInterval(doType, 1000 / speed);
+			typer = setInterval(doType, 1000 / (wpm > 0 ? wpm : 120));
 		},
 		stop() {
 			stopTyping();
