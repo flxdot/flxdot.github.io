@@ -9,7 +9,9 @@ a[href^="http"]:not(:has(svg, img))::after
 */
 export function markExternalLinks() {
 	Array.from(document.getElementsByTagName('a'))
-		.filter((e: HTMLAnchorElement) => e.href.startsWith('http'))
+		.filter((e: HTMLAnchorElement) => {
+			return e.href.startsWith('http');
+		})
 		.forEach((e: HTMLAnchorElement) => {
 			const childImages = e.getElementsByTagName('svg');
 			if (childImages.length == 0) {

@@ -25,6 +25,33 @@ a {
 	text-decoration: none;
 	position: relative;
 
+	&.external {
+		padding-right: 0.85em;
+	}
+
+	&.external::after {
+		content: '';
+		width: 0.6em;
+		height: 0.6em;
+		margin-left: 0.25em;
+		margin-right: -0.85em;
+		background-image: url('./icons/ext-link.svg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		display: inline-block;
+	}
+
+	&.external::before {
+		content: '';
+		position: absolute;
+		bottom: 0.08em;
+		left: 0;
+		height: 0.08em;
+		width: 100%;
+		background: var(--text-primary);
+	}
+
 	&:hover {
 		background: var(--accent-grad);
 		background-clip: text;
@@ -33,17 +60,15 @@ a {
 		-moz-background-clip: text;
 		-moz-text-fill-color: transparent;
 	}
+
+	&:hover::before {
+		background: var(--accent-grad);
+	}
 }
 
 // a[href^="http"]:not(:has(svg, img))::after {
-a.external::after {
-	content: '';
-	width: 0.6em;
-	height: 0.6em;
-	margin-left: 0.25em;
-	background-image: url('./icons/ext-link.svg');
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: contain;
-	display: inline-block;
+
+.main-content {
+	max-width: 640px;
+	margin: 0 auto;
 }

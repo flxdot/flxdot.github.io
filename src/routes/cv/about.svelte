@@ -22,23 +22,11 @@
 
 <style lang="scss">
 	#cv-about {
+		width: 75%;
+
 		p {
 			font-size: 2rem;
 			margin: 10px 0;
-		}
-
-		:global(a:before) {
-			content: '';
-			position: absolute;
-			bottom: 4px;
-			left: 0;
-			height: 4px;
-			width: 100%;
-			background: var(--text-primary);
-		}
-
-		:global(a:hover:before) {
-			background: var(--accent-grad);
 		}
 	}
 </style>
