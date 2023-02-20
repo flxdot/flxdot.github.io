@@ -66,14 +66,16 @@
 		display: flex;
 		align-items: center;
 
-		font-size: var(--fs);
-
 		& > div {
 			max-width: var(--w);
 			margin: var(--mt) auto var(--mb) calc(var(--ml) - 1rem);
 
 			& > h2 {
 				opacity: var(--x);
+			}
+
+			& > div {
+				font-size: var(--fs);
 			}
 		}
 	}
