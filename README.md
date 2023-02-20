@@ -1,29 +1,13 @@
-# create-svelte
+# personal homepage - @flxdot
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+Welcome to the code behind the scenes of [fanghanel.dev](http://fanghanel.dev).
 
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+This endevor is foremost a exploration of [Svelte](https://svelte.dev/) and the tooling around it.
+It was used to get into the Framework to see how it behaves in comparison to React or Vue3.
+I furthermore wanted to explore some fancy other stuff as animate by scrolling,
+as well as serving content from a JSON source.
+The goal is to use as minimal dependencies as possible.
+This way I can seperate the data (content) from the layout of the page.
 
 ## Building
 
@@ -35,4 +19,6 @@ npm run build
 
 You can preview the production build with `npm run preview`.
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+---
+
+powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
