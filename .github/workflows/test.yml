@@ -10,8 +10,9 @@ on:
   workflow_dispatch:
 
 jobs:
-  # Single deploy job since we're just deploying
-  deploy:
+  # This is not really testing, but we are linting and proofing that the compiling
+  # with svelte works
+  test:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
