@@ -8,10 +8,3 @@
 		<slot />
 	</div>
 </section>
-
-<style>
-	h2 {
-		font-size: 1rem;
-		font-weight: var(--font-weight-normal);
-	}
-</style>

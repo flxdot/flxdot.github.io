@@ -69,6 +69,13 @@ a {
 
 // a[href^="http"]:not(:has(svg, img))::after {
 
+h1,
+h2,
+h3 {
+	font-size: 1em;
+	font-weight: var(--font-weight-normal);
+}
+
 .main-content {
 	max-width: 640px;
 	margin: 0 auto;
