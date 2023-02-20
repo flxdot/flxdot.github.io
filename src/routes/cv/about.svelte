@@ -11,8 +11,8 @@
 	}
 
 	// font-size: 48px -> 14px
-	// width: 75% -> 50%
-	// margin-left: 0 -> (innerWidth - selfWidth) / 2
+	// width: 75% -> 640px
+	// margin-left: 0 -> (innerWidth - 640) / 2
 	let windowHeight = window.innerHeight;
 	let windowWidth = window.innerWidth;
 	let scrollY = window.scrollY;
@@ -72,6 +72,8 @@
 
 			& > h2 {
 				opacity: var(--x);
+				font-size: max(var(--fs), 1em);
+				margin-left: calc(-1 * (1 - var(--x)) * 10%);
 			}
 
 			& > div {
