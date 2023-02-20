@@ -21,7 +21,9 @@
 
 <style lang="scss">
 	header {
-		position: relative;
+		position: fixed;
+		top: 0;
+		z-index: 100;
 	}
 
 	#header-links-container {

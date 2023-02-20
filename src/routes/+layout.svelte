@@ -32,5 +32,6 @@
 
 	:global(#app-container > *) {
 		padding: 1rem;
+		width: calc(100% - 2rem);
 	}
 </style>

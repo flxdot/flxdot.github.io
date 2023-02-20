@@ -3,7 +3,7 @@
 	--text-helper: #8d8d8d;
 	--background: #fff;
 	--accent: #6befef;
-	--accent-grad: linear-gradient(90deg, #72a8e5 0%, #6befef 100%);
+	--accent-grad: linear-gradient(45deg, #72a8e5 0%, #6befef 100%);
 
 	--font-weight-normal: 400;
 	--font-weight-bold: 600;
@@ -16,6 +16,7 @@
 }
 
 body {
+	background-color: var(--background);
 	margin: 0;
 	font-family: 'Roboto', sans-serif;
 }

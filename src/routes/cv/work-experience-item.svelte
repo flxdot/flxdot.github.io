@@ -20,12 +20,15 @@
 		grid-template-columns: 175px 1fr;
 		column-gap: 1rem;
 
-		font-size: 0.75em;
+		font-size: 14px;
 	}
 
-	.technology {
-		color: var(--text-helper);
+	.description {
+		line-height: 1.5em;
+	}
 
-		font-size: 0.75em;
+	.technology,
+	.dates {
+		color: var(--text-helper);
 	}
 </style>
