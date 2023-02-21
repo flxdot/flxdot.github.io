@@ -1,21 +1,21 @@
 [
 	{
 		"title": "Application Engineer",
-		"company": "SMS group GbmH",
+		"company": "SMS group GmbH",
 		"start": 2014,
 		"end": 2019,
 		"url": "https://www.sms-group.com",
-		"description": "Lead Software Architect and Developer of HD mold (Front and Backend). Design and development of analytic algorithms to detect events based on signals. Comissioning of HD mold including sensoric hardware and server infrastructure. Various small software projects/tooling. Administrator of a self-hosted GitLab Server.",
+		"description": "Worked in Electric and Automation department as the acting Lead Software Architect and Engineer of HD mold. A real-time system to interact with SCADA systems of continuous casting machines, based on timeseries processing. Design of sophisticated charting to provide meaning full insights into data based on up to 1000 sensor readings. Comissioning of HD mold including sensoric hardware and server infrastructure. Various small software projects and tooling in close cooperation with internal and external stakeholders. Administrator of a self-hosted GitLab Server.",
 		"technology": ["matlab", "python", "opc da"]
 	},
 	{
 		"title": "Product Manager",
-		"company": "SMS digital GbmH",
+		"company": "SMS digital GmbH",
 		"start": 2019,
 		"end": 2022,
 		"url": "https://www.sms-digital.com",
-		"description": "Product management of a data management system. Comissioning of data mangement systems at customer sites. Member of the development team to build a web application to provide a metadata repository for the data mangement system. Sales support and customer consulting for data mangement systems.",
-		"technology": ["python", "FastAPI", "SQLAlchemy"]
+		"description": "Manged and led a team of 5 engineers to develop a data management system. Comissioning of data mangement systems at customer sites. Technical lead of the development team to build a web application to provide a metadata repository for the data mangement system. Sales support and customer consulting for data mangement systems.",
+		"technology": ["python", "FastAPI", "React", "IBM Carbon Design"]
 	},
 	{
 		"title": "Lead Data Engineer",
@@ -23,7 +23,7 @@
 		"start": 2021,
 		"end": 2022,
 		"url": "https://www.sms-digital.com",
-		"description": "Responsible to define and drive company standards in data engineering domain. Advice development teams on data architecture.",
+		"description": "Responsible to define and drive company standards in data engineering domain. Advice development teams on data architecture. Define technical standars for the company in cooperation with other technical leads.",
 		"technology": ["python"]
 	},
 	{
@@ -31,7 +31,7 @@
 		"company": "Nitrex",
 		"start": 2022,
 		"url": "https://www.nitrex.com",
-		"description": "Responsible to define and drive company standards in data engineering domain. Advice development teams on data architecture.",
-		"technology": ["python", "FastAPI", "AWS"]
+		"description": "Design and implement distributed Saas solution - front and backend. Governance for the entire software group with regard to coding standards, security standards and secure coding. Responsibility for code reviews and code quality across the software group. Responsibility for DevOps and related tasks, cloud architecture Training of new, as well as in experienced developers. Responsibility for prototyping and conducting PoCs for new applications/ideas.",
+		"technology": ["python", "FastAPI", "AWS", "Vue.js"]
 	}
 ]

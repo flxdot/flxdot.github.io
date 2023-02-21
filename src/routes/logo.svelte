@@ -1,4 +1,5 @@
 <script lang="ts">
+	import TextGradient from '$components/TextGradient.svelte';
 	import { wrapKeyUp } from '$lib/handlers';
 
 	let navigateHome = () => {
@@ -8,7 +9,7 @@
 
 <div class="logo" on:click={navigateHome} on:keyup={wrapKeyUp(navigateHome)}>
 	<span class="firstname">felix</span><span class="lastname"
-		>fanghanel<span class="domain">.dev()</span></span
+		>fanghanel<TextGradient>.dev()</TextGradient></span
 	>
 </div>
 
@@ -25,6 +26,7 @@
 		}
 
 		span.firstname {
+			background-color: var(--background);
 			box-sizing: border-box;
 			-moz-box-sizing: border-box;
 			-webkit-box-sizing: border-box;

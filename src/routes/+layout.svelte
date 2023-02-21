@@ -32,9 +32,6 @@
 
 	:global(#app-container > *) {
 		padding: 1rem;
-	}
-
-	#content {
-		max-width: 75%;
+		width: calc(100% - 2rem);
 	}
 </style>

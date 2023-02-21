@@ -2,6 +2,9 @@
 
 <style lang="scss">
 	footer {
+		position: fixed;
+		bottom: 0;
+
 		font-size: 14px;
 		color: var(--text-helper);
 	}

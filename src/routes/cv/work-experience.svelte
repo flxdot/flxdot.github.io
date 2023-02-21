@@ -4,8 +4,10 @@
 	import { experience } from './data';
 </script>
 
-<Section header="Work experience">
-	{#each experience as job}
-		<WorkExperienceItem {job} />
-	{/each}
-</Section>
+<div class="main-content">
+	<Section header="Work experience">
+		{#each experience as job}
+			<WorkExperienceItem {job} />
+		{/each}
+	</Section>
+</div>
